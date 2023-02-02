@@ -1,0 +1,18 @@
+@media screen and (max-width:600px){
+
+    
+    [class*="pcpbox"]{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        margin: 1rem;
+    }
+
+    [class*="leftbox"]{
+        border-radius: 0;
+    }
+
+    [class*="rightbox"]{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}

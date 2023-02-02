@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.pcpbox {
+    display: grid;
+    grid-template-areas: 
+    "top top"
+    "left right";
+    max-width: 40rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.topbox {
+    grid-area: top; 
+    padding: 2.5rem;     
+}
+
+.topbox h1 {
+    color: hsl(179, 62%,43%);
+    font-weight: 700;
+}
+
+.topbox h2 {
+    color: hsl(71, 73%, 54%);
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.topbox p {
+    color: hsl(218, 22%, 67%);
+    padding-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.leftbox {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem; 
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-radius: 0 0 0 0.5rem;
+   
+}
+
+.leftbox h1 {
+    font-size: 1.3rem;
+}
+
+.leftbox h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    padding-top: 0.8rem;
+    gap: 1rem;
+}
+
+.leftbox b {
+    font-size: 1.2rem;
+    color: hsl(204, 73%, 93%, 0.5);
+}
+
+.leftbox p {
+    font-size: 1rem;
+}
+
+.btnsign {
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0 10px 10px hsl(0,0%,0%,10%);
+    border: none; 
+    font-size: 1rem;   
+    font-weight: 700;
+    color: white;
+    border-radius: 0.3rem;
+    max-width: 15rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.rightbox {
+    grid-area: right;
+    padding: 2.5rem 5rem 2rem 2.5rem;
+    background-color: hsl(179, 50%, 50%);
+    border-radius: 0 0 0.5rem 0;
+    color: white;    
+    line-height: 1.4rem;
+}
+
+.rightbox h1 {
+    font-size: 1.3rem;
+}
+
+.rightbox p {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+footer {padding-top: 1rem;}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
